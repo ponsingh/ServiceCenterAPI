@@ -1,0 +1,1 @@
+dotnet ef dbcontext scaffold "Server=PONSINGH\SQLEXPRESS;Database=ServiceCenterDB;Integrated Security=True;Encrypt=False;" Microsoft.EntityFrameworkCore.SqlServer -o Infrastructure/Persistence/Models -c ServiceCenterDbContext --context-dir Infrastructure/Persistence/DbContextActions --no-onconfiguring --force

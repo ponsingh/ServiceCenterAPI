@@ -1,0 +1,6 @@
+@ServiceCenterAPI_HostAddress = http://localhost:5068
+
+GET {{ServiceCenterAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
