@@ -37,6 +37,10 @@
         IRepository<Status> Statuses { get; }
         IRepository<ServiceType> ServiceTypes { get; }
         IRepository<JobStatus> JobStatuses { get; }
+        IRepository<Item> Items { get; }
+        IRepository<JobPart> JobParts { get; }
+
+
 
         /// <summary>
         /// Save all changes to database in a transaction

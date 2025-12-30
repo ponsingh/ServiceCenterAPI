@@ -34,6 +34,8 @@ namespace ServiceCenterAPI.Repositories
         private IRepository<Status>? _statuses;
         private IRepository<ServiceType>? _serviceTypes;
         private IRepository<JobStatus>? _jobStatuses;
+        private IRepository<Item>? _items;
+        private IRepository<JobPart>? _jobParts;
 
         public UnitOfWork(ServiceCenterDbContext context)
         {
@@ -64,6 +66,10 @@ namespace ServiceCenterAPI.Repositories
         public IRepository<Status> Statuses => _statuses ??= new Repository<Status>(_context);
         public IRepository<ServiceType> ServiceTypes => _serviceTypes ??= new Repository<ServiceType>(_context);
         public IRepository<JobStatus> JobStatuses => _jobStatuses ??= new Repository<JobStatus>(_context);
+
+        public IRepository<Item> Items => _items ??= new Repository<Item>(_context);
+
+        public IRepository<JobPart> JobParts => _jobParts ?? new Repository<JobPart>(_context);
 
         /// <summary>
         /// Save all changes from all repositories in one transaction

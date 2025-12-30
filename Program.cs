@@ -27,6 +27,9 @@ builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 // Services - Employee Management
 builder.Services.AddScoped<IEmployeeService, EmployeeService>();
 builder.Services.AddScoped<ICustomerService, CustomerService>();
+builder.Services.AddScoped<IServiceOrderService, ServiceOrderService>();
+builder.Services.AddScoped<IItemService, ItemService>();
+builder.Services.AddScoped<IJobService, JobService>();
 
 // ============ API CONFIGURATION ============
 
